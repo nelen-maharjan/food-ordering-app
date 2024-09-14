@@ -5,7 +5,7 @@ import UserTabs from "@/components/layout/UserTabs";
 import UseProfile from "@/components/UseProfile";
 import Link from "next/link";
 import {redirect} from "next/navigation";
-import {useState} from "react";
+import {useState} from "react"
 import toast from "react-hot-toast";
 
 export default function NewMenuItemPage() {

@@ -1,10 +1,9 @@
 "use client";
-import SectionHeaders from "@/components/layout/SectionHeaders";
 import UserTabs from "@/components/layout/UserTabs";
 import UseProfile from "@/components/UseProfile";
 import { DbTimeForHuman } from "@/libs/datetime";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react"
 
 const OrdersPage = () => {
   const [orders, setOrders] = useState([]);

@@ -4,7 +4,7 @@ import UserTabs from '@/components/layout/UserTabs'
 import UseProfile from '@/components/UseProfile';
 import Link from 'next/link';
 import { Right } from '@/components/icons/Right';
-import Image from 'next/image';
+import Image from 'next/image'
 
 const MenuItemsPage = () => {
     const [menuItems, setMenuItems] = useState([])

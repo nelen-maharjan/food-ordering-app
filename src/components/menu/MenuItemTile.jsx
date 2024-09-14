@@ -23,4 +23,5 @@ const MenuItemTile = ({ onAddtoCart, ...item }) => {
   );
 };
 
+
 export default MenuItemTile;

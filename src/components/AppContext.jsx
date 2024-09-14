@@ -36,10 +36,12 @@ const AppProvider = ({ children }) => {
   }
 
   function removeCartProduct(idToRemove) {
+    console.log("Removing product with id:", idToRemove);
     setCartProducts((prevCartProducts) => {
       const newCartProducts = prevCartProducts.filter(
-        (product) => product.id !== idToRemove
+        (product) => product._id !== idToRemove
       );
+      console.log("New cart products:", newCartProducts);
       saveCartProductToLocalStorage(newCartProducts);
       return newCartProducts;
     });

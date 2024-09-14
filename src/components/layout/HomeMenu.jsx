@@ -1,5 +1,5 @@
 'use client';
-import Image from 'next/image'
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react'
 import MenuItem from '../menu/MenuItem'
 import SectionHeaders from './SectionHeaders'

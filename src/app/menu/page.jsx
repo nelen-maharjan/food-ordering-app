@@ -1,7 +1,7 @@
 'use client'
 import SectionHeaders from '@/components/layout/SectionHeaders';
 import MenuItem from '@/components/menu/MenuItem';
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 
 const MenuPage = () => {
     const [categories, setCategories] = useState([]);

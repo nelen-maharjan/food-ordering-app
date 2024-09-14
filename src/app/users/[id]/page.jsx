@@ -4,7 +4,7 @@ import UserTabs from "@/components/layout/UserTabs";
 import UseProfile from "@/components/UseProfile";
 import {useParams} from "next/navigation";
 import {useEffect, useState} from "react";
-import toast from "react-hot-toast";
+import toast from "react-hot-toast"
 
 export default function EditUserPage() {
   const {loading, data} = UseProfile();

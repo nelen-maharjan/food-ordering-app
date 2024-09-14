@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React from 'react'
+import React from 'react';
 import toast from 'react-hot-toast';
 
 const EditableImage = ({ link, setLink }) => {

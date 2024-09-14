@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const AddressInput = ({ addressProps, setAddressProp, disabled=false }) => {
   const { phone, streetAddress, postalCode, city, country } = addressProps;

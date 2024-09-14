@@ -2,7 +2,7 @@ import {authOptions} from "@/app/api/auth/[...nextauth]/route";
 import MenuItem from "@/models/MenuItem";
 import Order from "@/models/Order";
 import mongoose from "mongoose";
-import {getServerSession} from "next-auth";
+import {getServerSession} from "next-auth"
 const stripe = require('stripe')(process.env.STRIPE_SK);
 
 export async function POST(req) {

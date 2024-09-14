@@ -17,4 +17,4 @@ const MenuItemSchema = new Schema({
 
 const MenuItem = models?.MenuItem || model('MenuItem', MenuItemSchema);
 
-export default MenuItem;
+export default MenuItem

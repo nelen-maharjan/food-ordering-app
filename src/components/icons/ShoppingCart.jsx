@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const ShoppingCart = ({className='h-6 w-6'}) => {
   return (

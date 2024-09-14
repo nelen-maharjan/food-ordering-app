@@ -11,7 +11,7 @@ const MenuItem = (menuItem) => {
   const [selectedSize, setSelectedSize] = useState(sizes?.[0] || null);
   const [selectedExtras, setSelectedExtras] = useState([]);
   const [showPopup, setShowPopup] = useState(false);
-  const { addToCart } = useContext(CartContext);
+  const { addToCart } = useContext(CartContext)
 
   async function handleAddToCartButtonClick() {
     const hasOptions = sizes.length > 0 || extraIngredientPrices.length > 0;

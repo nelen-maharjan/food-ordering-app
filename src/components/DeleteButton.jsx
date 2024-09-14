@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 
 const DeleteButton = ({ label, onDelete }) => {
-    const [showConfirm, setShowConfirm] = useState(false)
-
+    const [showConfirm, setShowConfirm] = useState(false);
     if (showConfirm) {
         return (
             <div className='fixed flex justify-center h-full items-center inset-0 bg-black/80'>

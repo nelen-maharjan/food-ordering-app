@@ -5,7 +5,7 @@ import SectionHeaders from "@/components/layout/SectionHeaders";
 import AddressInput from "@/components/layout/AddressInput";
 import UseProfile from "@/components/UseProfile";
 import toast from "react-hot-toast";
-import CartProduct from "@/components/menu/CartProduct";
+import CartProduct from "@/components/menu/CartProduct"
 
 export default function CartPage() {
   const { cartProducts, removeCartProduct } = useContext(CartContext);

@@ -7,7 +7,7 @@ import toast from 'react-hot-toast';
 import Link from 'next/link';
 import { Left } from '@/components/icons/Left';
 import { redirect, useParams } from 'next/navigation';
-import DeleteButton from '@/components/DeleteButton'
+import DeleteButton from '@/components/DeleteButton';
 
 const EditMenuItemPage = () => {
     const {id} = useParams();

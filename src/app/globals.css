@@ -64,8 +64,8 @@ div.tabs > *.active{
 /* Scrollbar */
 /* width */
 ::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
+    width: 11px;
+    height: 11px;
 }
  
 /* Track */

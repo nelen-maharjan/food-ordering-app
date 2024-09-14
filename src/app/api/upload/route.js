@@ -1,5 +1,5 @@
 import { createClient } from '@supabase/supabase-js';
-import uniqid from 'uniqid'; // Import uniqid library
+import uniqid from 'uniqid'; 
 
 const supabaseUrl = 'https://nluiotrfbuyetjfcagss.supabase.co';
 const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;

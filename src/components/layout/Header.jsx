@@ -5,7 +5,7 @@ import Link from "next/link";
 import React, { useContext, useState } from "react";
 import { CartContext } from "@/components/AppContext";
 import ShoppingCart from "@/components/icons/ShoppingCart";
-import Hamburger from "../icons/Hamburger";
+import Hamburger from "@/components//icons/Hamburger"
 
 function AuthLinks({ status, userName }) {
   if (status === 'authenticated') {

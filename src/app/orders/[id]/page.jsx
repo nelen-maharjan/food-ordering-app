@@ -3,7 +3,7 @@ import { CartContext, cartProductPrice } from "@/components/AppContext";
 import AddressInput from "@/components/layout/AddressInput";
 import SectionHeaders from "@/components/layout/SectionHeaders";
 import CartProduct from "@/components/menu/CartProduct";
-import { useParams } from "next/navigation";
+import { useParams } from "next/navigation"
 import React, { useContext, useEffect, useState } from "react";
 
 const OrderPage = () => {

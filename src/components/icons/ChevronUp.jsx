@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const ChevronUp = ({ className = 'w-6 h-6' }) => {
     return (

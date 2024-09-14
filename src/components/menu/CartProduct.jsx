@@ -29,11 +29,11 @@ const CartProduct = ({ product, onRemove }) => {
       <div className="text-lg font-semibold">
         Rs&nbsp;{cartProductPrice(product)}
       </div>
-      {!!onRemove && (
+      {!!onRemove && ( 
         <div className="ml-2">
           <button
             type="button"
-            onClick={() => onRemove(product.id)}
+            onClick={() => onRemove(product._id)}
             className="p-2">
             <Trash />
           </button>

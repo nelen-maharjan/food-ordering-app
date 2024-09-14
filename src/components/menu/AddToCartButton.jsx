@@ -14,6 +14,7 @@ const AddToCartButton = ({hasSizesOrExtras, onClick, basePrice, image}) => {
                 </div>
             </FlyingButton>
             </div>
+            
         )
     }
   return (

@@ -1,6 +1,6 @@
 import ContactUs from '@/components/layout/ContactUs'
 import CustomerService from '@/components/layout/CustomerService'
-import Hero from '@/components/layout/Hero'
+import Hero from '@/components/layout/Hero';
 import HomeMenu from '@/components/layout/HomeMenu'
 import SectionHeaders from '@/components/layout/SectionHeaders'
 import React from 'react'

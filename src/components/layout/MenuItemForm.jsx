@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import React, { useEffect, useState } from 'react'
 import EditableImage from '@/components/layout/EditableImage';
 import MenuItemPriceProps from '@/components/layout/MenuItemPriceProps';

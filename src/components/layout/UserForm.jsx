@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState } from "react"
 import EditableImage from "@/components/layout/EditableImage";
 import UseProfile from "@/components/UseProfile";
 import AddressInput from "@/components/layout/AddressInput";

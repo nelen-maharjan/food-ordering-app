@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import Trash from '@/components/icons/Trash'
 import Plus from '@/components/icons/Plus'
 import ChevronDown from '@/components/icons/ChevronDown'

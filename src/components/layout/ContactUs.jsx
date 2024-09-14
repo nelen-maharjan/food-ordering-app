@@ -1,5 +1,5 @@
-import React from 'react'
-import SectionHeaders from './SectionHeaders'
+import React from 'react';
+import SectionHeaders from '@/components/layout/SectionHeaders'
 
 const ContactUs = () => {
   return (

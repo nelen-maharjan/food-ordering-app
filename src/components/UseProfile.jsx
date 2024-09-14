@@ -11,8 +11,8 @@ const UseProfile = () => {
             response.json().then(data =>{
                 setData(data)
                 setLoading(false);
-            })
-        })
+            });
+        });
     }, []);
   return {loading, data}
 }

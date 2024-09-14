@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export const Left = ({ className = 'w-6 h-6' }) => {
     return (

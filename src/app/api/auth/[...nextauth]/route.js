@@ -1,5 +1,5 @@
 import * as mongoose from "mongoose";
-import User from '@/models/User'
+import User from '@/models/User';
 import NextAuth, { getServerSession } from "next-auth/next";
 import bcrypt from 'bcryptjs'
 import CredentialsProvider from "next-auth/providers/credentials";

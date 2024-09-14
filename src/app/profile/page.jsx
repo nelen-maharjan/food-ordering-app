@@ -3,7 +3,7 @@ import { useSession } from 'next-auth/react'
 import { redirect } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
 import toast from 'react-hot-toast';
-import UserTabs from '@/components/layout/UserTabs'
+import UserTabs from '@/components/layout/UserTabs';
 import UserForm from '@/components/layout/UserForm'
 
 const ProfilePage = () => {
