@@ -3,7 +3,6 @@ import { CartContext } from "@/components/AppContext";
 import MenuItemTile from "@/components/menu/MenuItemTile";
 import toast from "react-hot-toast";
 import Image from "next/image";
-import FlyingButton from "react-flying-item";
 
 const MenuItem = (menuItem) => {
   const { image, name, description, basePrice, sizes, extraIngredientPrices } =
@@ -11,7 +10,7 @@ const MenuItem = (menuItem) => {
   const [selectedSize, setSelectedSize] = useState(sizes?.[0] || null);
   const [selectedExtras, setSelectedExtras] = useState([]);
   const [showPopup, setShowPopup] = useState(false);
-  const { addToCart } = useContext(CartContext)
+  const { addToCart } = useContext(CartContext);
 
   async function handleAddToCartButtonClick() {
     const hasOptions = sizes.length > 0 || extraIngredientPrices.length > 0;
@@ -20,7 +19,7 @@ const MenuItem = (menuItem) => {
       return;
     }
     addToCart(menuItem, selectedSize, selectedExtras);
-    await new Promise(resolve => setTimeout(resolve, 1000))
+    await new Promise((resolve) => setTimeout(resolve, 1000));
     setShowPopup(false);
     toast.success("Added to cart!", {
       position: "top-right",
@@ -61,7 +60,7 @@ const MenuItem = (menuItem) => {
           >
             <div
               className="overflow-y-scroll p-2"
-              style={{ maxHeight: "calc(100vh - 60px" }}
+              style={{ maxHeight: "calc(100vh - 60px)" }}
             >
               <Image
                 src={image}
@@ -77,7 +76,7 @@ const MenuItem = (menuItem) => {
                   <h3 className="text-center text-gray-700">Pick your size</h3>
                   {sizes.map((size) => (
                     <label
-                    key={size._id}
+                      key={size._id}
                       className="flex items-center gap-1 p-4 border rounded-md mb-1"
                     >
                       <input
@@ -102,7 +101,9 @@ const MenuItem = (menuItem) => {
                       <input
                         type="checkbox"
                         onChange={(ev) => handleExtraThingClick(ev, extraThing)}
-                        checked={selectedExtras.map(e => e._id).includes(extraThing._id)}
+                        checked={selectedExtras
+                          .map((e) => e._id)
+                          .includes(extraThing._id)}
                         name={extraThing.name}
                       />
                       {extraThing.name} - Rs {extraThing.price}
@@ -110,18 +111,12 @@ const MenuItem = (menuItem) => {
                   ))}
                 </div>
               )}
-              <FlyingButton 
-              targetTop={"5%"} 
-              targetLeft={"95%"}
-              src={image}
+              <button
+                className="primary sticky bottom-1"
+                onClick={handleAddToCartButtonClick}
               >
-                <div
-                  className="primary sticky bottom-1"
-                  onClick={handleAddToCartButtonClick}
-                >
-                  Add to cart Rs {selectedPrice}
-                </div>
-              </FlyingButton>
+                Add to cart Rs {selectedPrice}
+              </button>
               <button className="mt-2" onClick={() => setShowPopup(false)}>
                 Cancel
               </button>
