@@ -6,6 +6,7 @@ import React, { useContext, useState } from "react";
 import { CartContext } from "@/components/AppContext";
 import ShoppingCart from "@/components/icons/ShoppingCart";
 import Hamburger from "@/components//icons/Hamburger"
+import Image from "next/image";
 
 function AuthLinks({ status, userName }) {
   if (status === 'authenticated') {
@@ -55,7 +56,10 @@ const Header = () => {
       <header>
         {/* mobile screen nav  */}
         <div className="flex md:hidden items-center justify-between">
-          <Link className="text-primary font-semibold text-2xl" href="/">
+          <Link className="text-primary font-semibold text-2xl flex items-center gap-2" href="/">
+            <div>
+              <Image src={'/logo1.png'} alt="logo" width={40} height={40} />
+            </div>
             FOODIE
           </Link>
           <div className="flex items-center gap-6">
@@ -73,9 +77,9 @@ const Header = () => {
           </div>
         </div>
         {mobileNavOpen && (
-          <div 
-          onClick={() => setMobileNavOpen(false)}
-          className="md:hidden p-4 bg-gray-200 rounded-lg mt-2 flex flex-col gap-2 text-center text-xl">
+          <div
+            onClick={() => setMobileNavOpen(false)}
+            className="md:hidden p-4 bg-gray-200 rounded-lg mt-2 flex flex-col gap-2 text-center text-xl">
             <Link href="/">Home</Link>
             <Link href="/menu">Menu</Link>
             <Link href="/#about">About</Link>
@@ -87,7 +91,10 @@ const Header = () => {
         {/* big screen nav  */}
         <div className="hidden md:flex items-center justify-between">
           <nav className="flex gap-8 text-gray-500 font-semibold items-center">
-            <Link className="text-primary font-semibold text-2xl" href="/">
+            <Link className="text-primary font-semibold text-2xl flex items-center gap-2" href="/">
+              <div>
+                <Image src={'/logo1.png'} alt="logo" width={40} height={40} />
+              </div>
               FOODIE
             </Link>
             <Link href="/">Home</Link>
