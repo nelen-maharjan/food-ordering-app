@@ -37,6 +37,7 @@ export async function POST(req, res) {
         // Construct the public URL for the uploaded file
         const link = `${supabaseUrl}/storage/v1/object/public/nelen-food-ordering/images/${newFileName}`;
 
+
         return Response.json(link);
     } catch (error) {
         console.error('Error processing request:', error.message);

@@ -56,7 +56,7 @@ const Header = () => {
       <header>
         {/* mobile screen nav  */}
         <div className="flex md:hidden items-center justify-between">
-          <Link className="text-primary font-semibold text-2xl flex items-center gap-2" href="/">
+          <Link className="text-primary font-semibold text-2xl flex items-center" href="/">
             <div>
               <Image src={'/logo1.png'} alt="logo" width={40} height={40} />
             </div>
