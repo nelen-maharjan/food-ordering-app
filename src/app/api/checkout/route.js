@@ -44,7 +44,7 @@ export async function POST(req) {
     stripeLineItems.push({
       quantity: 1,
       price_data: {
-        currency: 'USD',
+        currency: 'npr',
         product_data: {
           name: productName,
         },
